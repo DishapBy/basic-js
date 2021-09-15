@@ -20,6 +20,3 @@ export default function createDreamTeam(arrayOfNames){
 
     return result.join('');
 }
-
-let a = createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null])
-console.log(a);
