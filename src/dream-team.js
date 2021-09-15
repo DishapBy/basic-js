@@ -18,5 +18,8 @@ export default function createDreamTeam(arrayOfNames){
         }
     })
 
+    if(result.length === 0){
+        return false;
+    }
     return result.join('');
 }
