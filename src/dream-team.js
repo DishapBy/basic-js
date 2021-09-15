@@ -2,7 +2,7 @@ export default function createDreamTeam(arrayOfNames){
     let result = [];
     arrayOfNames.forEach(item => {
         if(typeof item === "string"){
-            result.push(item[0])
+            result.push(item[0].toUpperCase)
         }
     });
 
