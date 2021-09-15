@@ -1,4 +1,4 @@
-function countCats(backyard){
+export default function countCats(backyard){
     let number = 0;
 
     backyard.forEach(item => {
