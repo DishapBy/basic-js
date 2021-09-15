@@ -7,7 +7,15 @@ export default function createDreamTeam(arrayOfNames){
     });
 
     result.sort((a,b) => {
-        return a > b ? 1 : -1;
+        if(a > b){
+            return 1
+        }
+        if(a < b){
+            return -1
+        }
+        if(a === b){
+            return 0;
+        }
     })
 
     return result;
