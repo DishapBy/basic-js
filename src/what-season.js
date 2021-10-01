@@ -6,6 +6,7 @@ export default function getSeason(array){
     else if (Object.prototype.toString.call(d) === "[object Date]") {
         if (!isNaN(d.getTime())) { 
             return 'Invalid date!' 
+        }
     }
 
     else {
