@@ -3,6 +3,11 @@ export default function getSeason(array){
         return 'Unable to determine the time of year!'
     }
 
+    else if (Object.prototype.toString.call(d) === "[object Date]") {
+        if (!isNaN(d.getTime())) { 
+            return 'Invalid date!' 
+    }
+
     else {
         if (date.getMonth() >= 2 && date.getMonth() <= 4) {
             return 'spring'
