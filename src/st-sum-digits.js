@@ -16,4 +16,6 @@ export default function getSumOfDigits(numbers) {
         }, 0)
 
     }
+
+    return result;
 }
